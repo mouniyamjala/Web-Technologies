@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>changing colors</title>
+<script>
+function setcolor(where,newcolor)
+{
+if(where=="foreground")
+document.body.style.color=newcolor;
+else
+document.body.style.backgroundColor=newcolor;
+}
+</script>
+</head>
+<body>
+change color:<br/>
+foreground:
+<input type="text" name="fore" size="4" 
+onchange="setcolor('foreground',this.value)"><br/><br/>
+background:
+<input type="text" name="fore" size="4" 
+onchange="setcolor('background',this.value)"><br/><br/>
+</body>
+</html>
